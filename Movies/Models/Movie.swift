@@ -10,6 +10,7 @@ import UIKit
 
 class Movie: NSObject {
 
+    //Keeping largeImage optional as it is downloaded only when the movie details view is loaded
     var title: String
     var rating: Double
     var totalVotes: Int
@@ -18,10 +19,10 @@ class Movie: NSObject {
     var posterPath: String
     var genres: [String]
     var smallImage: UIImage
-    var largeImage:UIImage
+    var largeImage:UIImage?
     
 
-    public init(title: String, rating: Double, totalVotes: Int, overview: String, releaseDate: String, posterPath: String, genres: [String], smallImage:UIImage, largeImage:UIImage) {
+    public init(title: String, rating: Double, totalVotes: Int, overview: String, releaseDate: String, posterPath: String, genres: [String], smallImage:UIImage) {
         self.title = title
         self.rating = rating
         self.totalVotes = totalVotes
@@ -29,8 +30,7 @@ class Movie: NSObject {
         self.releaseDate = releaseDate
         self.posterPath = posterPath
         self.genres = genres
-        self.smallImage = smallImage
-        self.largeImage = largeImage
+        self.smallImage = smallImage        
         
     }
 }

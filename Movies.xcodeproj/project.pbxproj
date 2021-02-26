@@ -16,6 +16,7 @@
 		DB14688825E76FF900A8F9AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB14688625E76FF900A8F9AF /* LaunchScreen.storyboard */; };
 		DB14689025E78FA700A8F9AF /* FetchMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14688F25E78FA700A8F9AF /* FetchMovies.swift */; };
 		DB14689525E78FE300A8F9AF /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14689425E78FE300A8F9AF /* Movie.swift */; };
+		DB14689725E8417600A8F9AF /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14689625E8417600A8F9AF /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DB14688925E76FF900A8F9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB14688F25E78FA700A8F9AF /* FetchMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovies.swift; sourceTree = "<group>"; };
 		DB14689425E78FE300A8F9AF /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		DB14689625E8417600A8F9AF /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				DB14687D25E76FF500A8F9AF /* TopRatedViewController.swift */,
 				DB14687F25E76FF500A8F9AF /* UpcomingViewController.swift */,
+				DB14689625E8417600A8F9AF /* MovieDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				DB14688025E76FF500A8F9AF /* UpcomingViewController.swift in Sources */,
 				DB14689525E78FE300A8F9AF /* Movie.swift in Sources */,
 				DB14687E25E76FF500A8F9AF /* TopRatedViewController.swift in Sources */,
+				DB14689725E8417600A8F9AF /* MovieDetailViewController.swift in Sources */,
 				DB14687A25E76FF500A8F9AF /* AppDelegate.swift in Sources */,
 				DB14687C25E76FF500A8F9AF /* SceneDelegate.swift in Sources */,
 			);
@@ -327,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Movies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Prashant.Movies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,7 +349,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Movies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Prashant.Movies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
