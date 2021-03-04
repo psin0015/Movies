@@ -18,15 +18,13 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var labelGenres: UILabel!
     @IBOutlet weak var labelReleaseDate: UILabel!
     @IBOutlet weak var labelMovieOverview: UILabel!
-    
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Setup the navigation bar
         self.navigationItem.title = "Movie Details"
-        
+
         //Fetch the movie details from the selected movie object and use them to populate the view
         if let selectedMovie = FetchMovies.shared.selectedMovie{
             
@@ -44,6 +42,5 @@ class MovieDetailViewController: UIViewController {
             self.labelReleaseDate.text = selectedMovie.releaseDate
             self.labelMovieOverview.text = selectedMovie.overview
         }
-    }
-    
+    }    
 }

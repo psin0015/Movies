@@ -25,9 +25,6 @@ class UpcomingViewController: UITableViewController {
         self.navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
         self.tabBarController?.tabBar.barTintColor = appThemeColor
         
-        //Fetch the upcoming movies        
-        FetchMovies.shared.fetchUpcomingMovies()
-        
         //Setup the loading activity indicator
         activityView.hidesWhenStopped = true        
         activityView.frame = CGRect(x: self.tabBarController!.view.frame.midX - 25, y: view.frame.midY - navigationController!.navigationBar.frame.maxY - 50, width: 50, height: 50)
@@ -35,8 +32,10 @@ class UpcomingViewController: UITableViewController {
         self.view.addSubview(activityView)
         
         //Disable the user interaction until the upcoming movies have been downloaded.
-        self.tabBarController?.view.isUserInteractionEnabled = false                
+        self.tabBarController?.view.isUserInteractionEnabled = false
         
+        //Fetch the upcoming movies
+        FetchMovies.shared.fetchUpcomingMovies()        
     }
     
         //Remove the fetch movies delegate

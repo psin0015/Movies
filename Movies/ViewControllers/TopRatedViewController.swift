@@ -23,10 +23,7 @@ class TopRatedViewController: UITableViewController {
         navigationBarAppearance.backgroundColor = appThemeColor
         self.navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
         self.tabBarController?.tabBar.barTintColor = appThemeColor
-        
-        //Fetch the top rated movies
-        FetchMovies.shared.fetchTopRatedMovies()
-        
+                        
         //Setup the loading activity indicator
         activityView.hidesWhenStopped = true
         activityView.frame = CGRect(x: self.tabBarController!.view.frame.midX - 25, y: view.frame.midY - navigationController!.navigationBar.frame.maxY - 50, width: 50, height: 50)
@@ -35,8 +32,10 @@ class TopRatedViewController: UITableViewController {
         
         //Disable the user interaction until the top rated movies have been downloaded.
         self.tabBarController?.view.isUserInteractionEnabled = false
-                            
         
+        //Fetch the top rated movies
+        FetchMovies.shared.fetchTopRatedMovies()
+                                    
     }
     
     //Remove the fetch movies delegate
@@ -115,6 +114,7 @@ extension TopRatedViewController: FetchMoviesDelegate{
         //Instantiate and present the movie details view controller
         let destination = self.storyboard!.instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
         self.navigationController!.pushViewController(destination, animated: true)
+
                 
     }
     
